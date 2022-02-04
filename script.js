@@ -33,7 +33,8 @@ function appendToElement (element, appendable) {
 // next it tells the context we want to draw a rectangle without fill
 // finally it fills the rect with color, or to simply draw the outline (fill or stroke).
 context.beginPath();
-context.rect(100, 520, 400, 400);
+context.rect(100, 100, 400, 400);
+context.lineWidth = 4;
 context.stroke();
 
 context.fillStyle = 'blue';
@@ -46,6 +47,13 @@ context.fillRect(100, 100, 400, 400);
 // The next two are our height and width, here we tell JS to fill 400 pixels
 // to the right and 400 down. Remember that 0,0 is the top left plane of the 
 // canvas.
+
+
+context.beginPath();
+context.fillStyle = 'white';
+context.arc(300, 300, 200, 0, 2 * Math.PI);
+context.stroke();
+context.fill();
 
 appendToElement(
     docRoot,
