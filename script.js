@@ -7,7 +7,7 @@ const canvasOptions = {
 
 const canvas = createCanvas(canvasOptions);
 
-const context = canvas.getContext('2d');
+const context = canvas.getContext('3d');
 
 function createCanvas ({
     width, 
