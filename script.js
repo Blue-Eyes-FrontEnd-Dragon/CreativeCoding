@@ -5,6 +5,10 @@ const canvasOptions = {
     width: window.innerWidth,
 };
 
+const canvas = createCanvas(canvasOptions);
+
+const context = canvas.getContext('2d');
+
 function createCanvas ({
     width, 
     height,
@@ -25,5 +29,5 @@ function appendToElement (element, appendable) {
 
 appendToElement(
     docRoot,
-    createCanvas(canvasOptions)
+    canvas
 );
