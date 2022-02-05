@@ -27,6 +27,20 @@ function appendToElement (element, appendable) {
     element.appendChild(appendable);
 };
 
+for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 5; j++) {
+        const width = 60;
+        const height = 60; 
+        const gap = 20;
+        const x = 100 + (width + gap) * i; 
+        const y = 100 + (height + gap) * j;
+    
+        context.beginPath();
+        context.rect(x, y, width, height);
+        context.stroke();
+    }
+}
+
 appendToElement(
     docRoot,
     canvas
