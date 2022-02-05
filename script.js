@@ -39,7 +39,7 @@ for (let i = 0; i < 5; i++) {
         context.rect(x, y, width, height);
         context.stroke();
 
-        if ((i % 2) > 0 || (j % 2) > 0) {
+        if (Math.random() * 1000 > x && Math.random() * 1000 > y) {
             context.beginPath();
             context.rect(x + 8, y + 8, width - 16, height - 16);
             context.stroke();
