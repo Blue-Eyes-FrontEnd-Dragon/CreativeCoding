@@ -42,6 +42,10 @@ for (let i = 0; i < 5; i++) {
         if (Math.random() * 1000 > x && Math.random() * 1000 > y) {
             context.beginPath();
             context.rect(x + 8, y + 8, width - 16, height - 16);
+
+            if (Math.random() > 9.5) {
+                context.strokeStyle = 'red';
+            }
             context.stroke();
         }
     }
